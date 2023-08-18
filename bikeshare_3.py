@@ -320,16 +320,16 @@ def raw_data(df):
                 if see_data.lower() == 'yes':
                     # if there are 5 or fewer rows remaining to be seen
                     if (row_count + 5) >= len(df):
-                        for i in range(row_count, len(df)):
-                            print(df.iloc[i], '\n')
+                        for row in range(row_count, len(df)):
+                            print(df.iloc[row], '\n')
                         print('Total rows in dataset: ', format(len(df), ','))
                         print('Rows seen: ', format(len(df), ','))
                         print('Rows remaining to be seen: 0')
                         break  
                     # if there are more than 5 rows remaining to be seen
                     else:    
-                        for i in range(row_count, (row_count + 5)):
-                            print(df.iloc[i], '\n')
+                        for row in range(row_count, (row_count + 5)):
+                            print(df.iloc[row], '\n')
                         print('Total rows in dataset: ', format(len(df), ','))
                         row_count = row_count + 5
                         print('Rows seen: ', format(row_count, ','))
