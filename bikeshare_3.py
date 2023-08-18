@@ -167,7 +167,7 @@ def time_stats(df, month, day):
     else:
         # display message to clarify that results are limited to a single day, but only if results have also been limited to a single month
         if month != 'All':
-            day = day + 's'
+            day += 's'
             print('Analysis prefiltered to only show information related to: ', day)
 
     # extract hour from the Start Time column to create an hour column
