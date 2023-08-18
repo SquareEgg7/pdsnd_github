@@ -7,7 +7,7 @@ August 18, 2023
 Explore US Bikeshare Data
 
 ### Description
-This project uses Python to analyze actual data from bike share systems in New York City, Chicago, and Washington DC.  
+This project uses Python to analyze actual data from bike share systems in 3 US cities - New York City, Chicago, and Washington DC.  
 
 The project shows summary statistics of the data including:
 
